@@ -1,0 +1,237 @@
+.dp{
+  width: 200px;
+}
+.hero {
+  height: calc(100vh - 100px);
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+
+  .wrapper {
+    max-width: 1366px;
+    height: 100%;
+    margin-left: 200px;
+
+    .textCont {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      gap: 40px;
+
+      h2 {
+        font-size: 40px;
+        color: rebeccapurple;
+        letter-spacing: 10px;
+      }
+
+      h1 {
+        font-size: 60px;
+      }
+
+      img {
+        width: 50px;
+      }
+
+      .herobutton {
+        button {
+          padding: 20px;
+          margin-right: 15px;
+          background-color: transparent;
+          border: 1px solid white;
+          border-radius: 10px;
+          color: white;
+          cursor: pointer;
+        }
+      }
+      .herobutton:hover{
+        background-color: wheat;
+      }
+    }
+  }
+
+  .slidingTextContainer {
+    position: absolute;
+    bottom: -100px;
+    white-space: nowrap;
+    color: #ffffff09;
+    font-size: 50vh;
+    width: 50%;
+    font-weight: bold;
+  }
+
+  // Media queries for responsiveness
+  @media (max-width: 1200px) {
+    .wrapper {
+      margin-left: 100px;
+
+      .textCont {
+        width: 60%;
+
+        h2 {
+          font-size: 35px;
+        }
+
+        h1 {
+          font-size: 50px;
+        }
+
+        img {
+          width: 45px;
+        }
+
+        .herobutton {
+          button {
+            padding: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .wrapper {
+      margin-left: 50px;
+
+      .textCont {
+        width: 70%;
+
+        h2 {
+          font-size: 30px;
+        }
+
+        h1 {
+          font-size: 40px;
+        }
+
+        img {
+          width: 40px;
+        }
+
+        .herobutton {
+          button {
+            padding: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .wrapper {
+      margin-left: 30px;
+
+      .textCont {
+        width: 80%;
+
+        h2 {
+          font-size: 25px;
+        }
+
+        h1 {
+          font-size: 35px;
+        }
+
+        img {
+          width: 35px;
+        }
+
+        .herobutton {
+          button {
+            padding: 10px;
+          }
+        }
+      }
+    }
+
+    .slidingTextContainer {
+      font-size: 40vh;
+      bottom: -80px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .wrapper {
+      margin-left: 20px;
+
+      .textCont {
+        width: 90%;
+
+        h2 {
+          font-size: 20px;
+          letter-spacing: 5px;
+        }
+
+        h1 {
+          font-size: 30px;
+        }
+
+        img {
+          width: 30px;
+        }
+
+        .herobutton {
+          button {
+            padding: 8px;
+          }
+        }
+      }
+    }
+
+
+    .slidingTextContainer {
+      font-size: 30vh;
+      bottom: -60px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .wrapper {
+      margin-left: 10px;
+
+      .textCont {
+        width: 100%;
+
+        h2 {
+          font-size: 18px;
+          letter-spacing: 3px;
+        }
+
+        h1 {
+          font-size: 25px;
+        }
+
+        img {
+          width: 25px;
+        }
+
+        .herobutton {
+          button{
+            cursor: pointer;
+            padding: 6px;
+          }
+          button:hover{
+            cursor: pointer;
+            background-color: white;
+          }
+        }
+      }
+    }
+
+    .slidingTextContainer {
+      font-size: 20vh;
+      bottom: -50px;
+    }
+  }
+}
+
+.see:hover {
+  background-color: white;
+  color: #0c0c1d;
+}
+#seeid:hover{
+  background-color: white;
+  color: #0c0c1d;
+}

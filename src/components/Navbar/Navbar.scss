@@ -1,0 +1,23 @@
+.Logo{
+  width: 100px;
+}
+.navbarscss{
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  .wrapper{
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 100%;
+    .unorderdlist{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style: none;
+    }
+  }
+}

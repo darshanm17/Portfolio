@@ -1,0 +1,45 @@
+.sideline{
+  height: 96vh;
+  color: green;
+  width: 7px;
+  background: rgb(255,248,170);
+background: linear-gradient(0deg, rgba(255,248,170,1) 0%, rgba(28,212,52,1) 100%);
+  margin-left: 100px;
+  margin-top:20px ;
+  
+}
+.Educationhero{
+  display: flex;
+ 
+  background-image: linear-gradient(to bottom, #020e1f, #010c21, #010a22, #020724, #040425);
+  .Educationcont{
+    margin-top:20px ;
+    margin-left: 40px;
+    display: flex;
+    //align-items: center;
+    justify-content: space-between;
+   // gap: 30px;
+    flex-direction: column;
+    h2{
+      font-size: 30px;
+      color: rebeccapurple;
+      letter-spacing: 10px;
+    }
+    h1{
+    font-size: 40px;
+    }
+      .edudetails {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        width: 60%;
+      }
+.edulogos{
+  width: 100px;
+  .edulogos >img{
+    width: 100px;
+  }
+}
+    
+
+  }}

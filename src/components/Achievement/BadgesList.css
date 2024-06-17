@@ -1,0 +1,45 @@
+/* BadgesList.css */
+
+.badges-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.badge-link {
+  text-decoration: none;
+}
+
+.badge {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+  perspective: 1000px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.badge:hover {
+  transform: scale(1.05);
+}
+
+.badge-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.badge-title {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.badge:hover .badge-title {
+  color: #0073e6;
+}

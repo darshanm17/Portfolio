@@ -1,0 +1,115 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-color: #333;
+$background-color: linear-gradient(180deg, #0c0c1d, #111132);
+$border-radius: 5px;
+$padding: 15px;
+$max-width: 600px;
+$input-padding: 10px;
+$input-margin: 10px 0;
+
+// Keyframes for animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Container
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: $background-color;
+  animation: fadeIn 1s ease-in-out;
+}
+
+// Form
+.contact-form {
+ // background: white;
+  padding: $padding;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: $max-width;
+  width: 100%;
+  animation: fadeIn 1.2s ease-in-out;
+
+  h2 {
+    color: $primary-color;
+    margin-bottom: $padding;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+  label {
+    color: $font-color;
+    margin-bottom: 5px;
+    display: block;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: $input-padding;
+    margin: $input-margin 0;
+    border: 1px solid #ccc;
+    border-radius: $border-radius;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #0c0c1d;
+    color:$primary-color;
+    animation: fadeIn 1.8s ease-in-out;
+
+    &:focus {
+      border-color: $primary-color;
+      box-shadow: 0 0 5px rgba($primary-color, 0.5);
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: $input-padding;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    border-radius: $border-radius;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
+    margin-top: 15px;
+
+    &:hover {
+      background-color: $secondary-color;
+      transform: scale(1.05);
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .contact-form {
+    padding: $padding / 2;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
